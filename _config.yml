@@ -1,3 +1,6 @@
-name: Your New Jekyll Site
-markdown: redcarpet
+name: sporadic
+markdown: kramdown
 pygments: true
+
+twitter_username: peteragao
+github_username:  peteragao
