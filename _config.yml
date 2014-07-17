@@ -1,12 +1,3 @@
-# Site settings
-title: Please Wait
-email: peter.alan.gao@gmail.com
-description: "Incoming"
-baseurl: ""
-url: "http://peteragao.github.io"
-twitter_username: peteragao
-github_username:  peteragao
-
-# Build settings
-markdown: kramdown
-permalink: pretty
+name: Your New Jekyll Site
+markdown: redcarpet
+pygments: true
