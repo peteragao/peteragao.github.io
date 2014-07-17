@@ -1,6 +1,11 @@
 name: sporadic
 markdown: kramdown
 pygments: true
-
+title: sporadic
+email: peter.alan.gao@gmail.com
 twitter_username: peteragao
 github_username:  peteragao
+description: in all senses
+baseurl: ""
+url: "http://peteragao.github.io"
+permalink: pretty
