@@ -34,6 +34,11 @@ h1 { margin-bottom: 1em; }
 p { margin: 1em 0; }
 
 a         { color: #575757; }
+
+a:link {
+    text-decoration: none;
+}
+
 a:hover   { color: #000; }
 a:visited { color: #000; }
 

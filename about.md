@@ -4,4 +4,4 @@ title: about
 permalink: /about/
 ---
 
-This website was built using [Jekyll](http://jekyllrb.com/).
+This website is powered by [Jekyll](http://jekyllrb.com/).
