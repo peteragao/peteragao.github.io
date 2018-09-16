@@ -5,7 +5,7 @@ body {
   line-height: 1.5em;
   font-size: 95%;
 }
-a:link {
+a {
   text-decoration: none;
   color:#5d5db7;
 }
@@ -45,12 +45,17 @@ blockquote {
   border-left: 5px solid #ccc;
   padding: 3px 1em 3px;
 }
-
-table {
-  margin: auto;
-  border-top: 1px solid #666;
-  border-bottom: 1px solid #666;
+th {
+  height:20px;
+  vertical-align: top;
+  border:none;
 }
-table thead th { border-bottom: 1px solid #ddd; }
-th, td { padding: 5px; }
-thead, tfoot, tr:nth-child(even) { background: #eee }
+td {
+  border:none;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: none;
+    border-spacing: 0;
+}
