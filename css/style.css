@@ -4,11 +4,24 @@ body {
   padding: 1em;
   line-height: 1.5em;
   font-size: 95%;
+  letter-spacing: .05em;
 }
 a {
   text-decoration: none;
   color:#5d5db7;
 }
+h1 {
+  letter-spacing: .14em;
+  line-height: .2em;
+}
+h2 {
+  letter-spacing: .05em;
+  line-height: .1em;
+}
+h3 {
+  letter-spacing: .05em;
+}
+
 
 /* header and footer areas */
 .menu { padding: 0; }
