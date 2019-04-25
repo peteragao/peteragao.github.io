@@ -27,7 +27,8 @@ var data = [150, 230, 180, 90]; var svg = d3.select(&amp;quot;body&amp;quot;) .a
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>I am currently pursuing a PhD in Statistics at the University of Washington. I graduated from the University of Chicago in 2017 with an MS in Statistics and a BS in Mathematics and Statistics.</description>
+      <description>I am currently pursuing a PhD in Statistics at the University of Washington. My research interests center upon the uses of spatial and spatiotemporal statistics in environmental science and the social sciences. I am currently researching statistical postprocessing methods for improving forecasts for sea ice thickness with Adrian Raftery and Cecilia Bitz.
+I graduated from the University of Chicago in 2017 with an MS in Statistics and a BS in Mathematics and Statistics.</description>
     </item>
     
     <item>
