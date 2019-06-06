@@ -23,7 +23,6 @@ function initThirdSlideLine(dispatch, data) {
     return d[key];
   }  
   var grouped = d3.rollups(data, v => d3.sum(v, d => d.N), d => d.topRegion, d => d.MissionYear);
-  console.log(grouped);
   groupedReformat = [];
   grouped.forEach(function(d) {
     d[1].forEach(function(e) {
@@ -34,14 +33,12 @@ function initThirdSlideLine(dispatch, data) {
   var sumstat = d3.nest()
     .key(function(d) { return d.yr;})
     .entries(groupedReformat);
-  console.log(sumstat);
   var groupedStack = d3.stack()
     .keys([0,1,2,3,4,5,6,7,8])
     .value(function(d, key){
       return d.values[key].v;
     })
     (sumstat);
-  console.log(groupedStack);
   
     // Add X axis --> it is a date format
   var x = d3.scaleTime()
@@ -49,7 +46,7 @@ function initThirdSlideLine(dispatch, data) {
     .range([ 0, width ]);
   linePlot.append("g")
     .attr("transform", "translate(0," + height + ")")
-    .call(d3.axisBottom(x).ticks(5));
+    .call(d3.axisBottom(x));
 
   // Add Y axis
   var y = d3.scaleLinear()
@@ -57,7 +54,6 @@ function initThirdSlideLine(dispatch, data) {
     .range([ height, 0 ]);
   linePlot.append("g")
     .call(d3.axisLeft(y));
-  console.log(groupedStack);
   linePlot
     .selectAll("layers")
     .data(groupedStack)
