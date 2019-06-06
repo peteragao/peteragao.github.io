@@ -1,0 +1,165 @@
+<!DOCTYPE HTML>
+<html xml:lang="en" lang="en">
+<head>
+  <title>CSE512 | A3 [Add: title]</title>
+  <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
+  <script src="https://d3js.org/d3-array.v2.min.js" charset="utf-8"></script>
+  <script src="https://d3js.org/d3-geo.v1.min.js"></script>
+  <script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
+  <script src="https://unpkg.com/topojson@3"></script>
+
+  <script src="https://d3js.org/d3-time.v1.min.js"></script>
+  <script src="https://d3js.org/d3-time-format.v2.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/fullpage.js@3.0.5/dist/fullpage.min.js"></script>
+	
+  <link rel="stylesheet" href="fullpage.min.css">
+  <link rel="stylesheet" href="custom.css">
+  
+  
+</head>
+<body>
+  
+  <div id="fullpage">
+    <div class="section">
+      <div class="content">
+      <section class="title">
+	      <h1>Hidden in Plain Sight</h1>
+	      <h2><i>An exploration of deportation flights in the United States</i></h2>
+      </section>
+  
+      <section>
+        <p>
+          <strong>Team Members</strong>: Peter Gao, Harkirat Sohi, Jose Machado, Jiawen Liu, Max Schneider
+        </p>
+      </section>
+
+      <section>
+        <em>[Add: a summary figure of your project. Be sure to include relevant captions, too.]</em>
+        <p><em>[Add: links to your paper and poster.]</em></p>
+      </section>
+
+      <section>
+        <h2>Abstract</h2>
+        <p>
+        In December 2018, the University of Washington Center for Human Rights obtained a dataset concerning deportation flights operated by United States Immigration and Customs Enforcement (ICE) Air Operations. This dataset contains 1.73 million records of passengers on ICE Air flights spanning from October 1, 2010 to December 5, 2018, leaving from airports throughout the United States. This series of visualizations aims to provide insight into the network of ICE Air flights at the national level and allow users to learn about the operation of deportation flights at local airports. Each record in this dataset represents a single passenger aboard an ICE Air flight; as such, one individual may be represented in multiple records if their itinerary involves multiple destinations. As a final note, as noted by UWCHR, this dataset is incomplete: the removals represented here make up only a portion of those reported publicly by ICE. <a href="https://jsis.washington.edu/humanrights/2019/04/23/ice-air/">Learn more about the project that seeks to uncover the ICE flights data. </a>
+       </p>
+      </section>
+
+      <section>
+        <h2>Running Instructions</h2>
+  		  
+  		  The visualization proceeds in a multi-pane format below; users may flip through panes by scrolling or using the navigation bar on the right side of the page. Users may filter by country of citizenship or by departure airport to learn more about national and local variability in the network of deportation flights. 
+  
+  			<br><em>Note: For the purposes of visualizations shown on this page, a deportee for a particular departure airport is defined as an individual on an ICE flight from that airport. Individuals may stop at multiple airports and may thus be represented multiple times in this dataset.</em>
+		
+      </section>
+      </div>
+    </div>
+    <div class="section" id="firstSlide">
+		 <center><h1>U.S. airports in the ICE Air network</h1>
+        <h5><i>Select a departure airport of interest or leave blank to see national-level information.</i></h5>
+        <span>
+          <input type="text" class="form-control input_airport_name" placeholder="Airport name" aria-describedby="sizing-addon2">
+          <button class = "airport_submit">Submit</button><button id = "airport_clear">Clear</button>
+        </span>
+        
+        <div id = "firstSlideMap">
+        </div>
+        </center>
+    </div>
+    <div class="section" id="secondSlide">
+      <div class = "content">
+        <h1>Demographic Information</h1>
+        <div class = "input_pane">
+          Airport name: 
+          <span>
+            <input type="text" class="form-control input_airport_name" placeholder="Airport name" aria-describedby="sizing-addon2">
+            <button class = "airport_submit">Submit</button><button id = "airport_clear">Clear</button>
+          </span><br>
+          Country of Citizenship: <span class = "nation_select_pane"></span>  <span><button id = "nation_clear">Clear</button></span>
+        </div>
+  
+        <div id = "secondSlideSummary">
+        </div>
+      </div>
+    </div>
+    
+    <div class="section" id="thirdSlide">
+      <div class="content">
+		<div>
+			<h1>ICE Air Flights Over Time</h1>
+			<span style="margin-left: 40px"><h5><i>How has the number of passengers on deportation flights changed over time?</i></h5></span>
+		</div>
+        <div class = "input_pane">
+           Airport name:        
+        <span>
+          <input type="text" class="form-control input_airport_name" placeholder="Airport name" aria-describedby="sizing-addon2">
+          <button class = "airport_submit">Submit</button><button id = "airport_clear">Clear</button>
+        </span><br>
+        Country of Citizenship: <span class = "nation_select_pane"></span>  <span><button id = "nation_clear">Clear</button></span>
+        </div>
+        <div id = "thirdSlideLine">
+        </div>
+      </div>
+  </div>
+  <div class="section" id="fourthSlide">
+      <div class="content">
+  			<h1>Exploring the Network of ICE Air Airports</h1>
+  			<span style="margin-left: 40px"><h5><i>What are the most common destinations for each departure airport and country of citizenship?</i></h5></span>
+        <div class = "input_pane">
+           Airport name:        
+        <span>
+          <input type="text" class="form-control input_airport_name" placeholder="Airport name" aria-describedby="sizing-addon2">
+          <button class = "airport_submit">Submit</button><button id = "airport_clear">Clear</button>
+        </span><br>
+        Country of Citizenship: <span class = "nation_select_pane"></span>  <span><button id = "nation_clear">Clear</button></span>
+        </div>
+        <div id = "fourthSlideFlights">
+        </div>
+      </div>
+  </div>
+  <div class="section">
+      <div class="content">
+        <div>
+  			<h1>Exploring the Network of ICE Air Airports</h1>
+  			<span style="margin-left: 40px"><h5><i>What are the top five destination airports for each departure airport and country of citizenship?</i></h5></span>
+		    </div> <div class = "input_pane">
+           Airport name:        
+        <span>
+          <input type="text" class="form-control input_airport_name" placeholder="Airport name" aria-describedby="sizing-addon2">
+          <button class = "airport_submit">Submit</button><button id = "airport_clear">Clear</button>
+        </span><br>
+        Country of Citizenship: <span class = "nation_select_pane"></span>  <span><button id = "nation_clear">Clear</button></span>
+        </div>
+        <div id = "bar_pane">
+        </div>
+      </div>
+  </div>
+</div>
+  <script src="01_Map.js"></script>
+  <script src="02_Summary.js"></script>
+  <script src="03_Line.js"></script>
+  <script src="04_Flights.js"></script>
+  <script src="05_Bar_Coc.js"></script>
+  <script src="main.js"></script>	
+	<script>
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+          menu: '#menu', 
+          lockAnchors: false,
+          anchors:['first', 'second', 'third', 'fourth', 'fifth'],
+	       	navigation: true,
+		      navigationPosition: 'right',
+		      showActiveTooltip: true,
+		      navigationTooltips: ['Introduction', 'hello', 'hello'],
+        });
+    });
+	</script>
+</body>
+</html> 
+

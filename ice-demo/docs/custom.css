@@ -1,0 +1,110 @@
+ 
+
+body {
+  max-width: 1200px;
+  font-family:  "Avenir Next", Helvetica Neue, Arial;
+  font-size: 0.95em;
+}
+a, a:visited { text-decoration: none; color: #7533f4; }
+a:hover { text-decoration: underline; color: #f4b014; }
+h1, h2, h3, h4, h5 {
+  color: #492a7c;
+  background-color: inherit;
+  font-weight: normal;
+  padding: 0 0 5px 0;
+  margin: 0px 0 0 0;
+  border: none;
+  clear: right;
+}
+h1 { font-size: 24pt; margin: 0 10px 15px 0px; line-height: 24px; }
+h2 { font-size: 14pt; margin: 10px 0 10px 0; letter-spacing: 0.01em; border-bottom: 1px solid #ccc;  line-height: 16px;}
+h3 { font-size: 13pt; }
+h4 { font-size: 12pt; }
+h5 { font-size: 11pt; margin: 0 0 0px 20px; color: #555;}
+p { margin: 0 0 10px 0; }
+.content {
+  margin: 0;
+  padding: 15px 20px;
+  background-color: #ffffff;
+}
+.title, .title h1, .title a {
+  color: #492a7c;
+  font-size: 24pt;
+  margin-bottom: 20px;
+  margin-top: 5px;
+}
+.footer {
+  border-top: 1px solid #ccc;
+  margin-top: 30px;
+  padding-top: 4px;
+  text-align: right;
+  font-size: 12px;
+}
+.footer a {
+  color: #21346B;
+}
+.footer a:hover {
+  color: #ce3333;
+}
+
+button {
+  position: relative;
+  cursor: pointer;
+  padding: 3px 4px;
+  background: #000;
+  color: #fff;
+  border-radius: 4px;
+  font: 12px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  text-shadow: 0 1px 0 #000;
+  background: #444;
+}
+
+button:active {
+  background: #222;
+}
+
+.input_pane{
+  margin-left: 40px;
+}
+.input_airport_name{
+  width:320px;
+}
+
+select {
+  color: #000;
+  font-family: "Avenir Next";
+  position: relative;
+  font: 12px;
+  padding: 3px 4px;
+  border-radius: 4px;
+}
+
+input {
+  position: relative;
+  font-family: "Avenir Next";
+  font: 12px;
+  padding: 3px 4px;
+  border-radius: 4px;
+}
+
+.ui-widget {
+  font-family: "Avenir Next";
+  font-size: 12px;
+}
+.fp-tooltip {
+  font-family: "Avenir Next";
+  color:#000;
+}
+
+.line {
+    fill: none;
+    stroke: #ffab00;
+    stroke-width: 3;
+}
