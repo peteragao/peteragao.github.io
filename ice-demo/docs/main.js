@@ -6,7 +6,7 @@ function main() {
   
   // CHANGE THESE TO SWITCH PROJECTION
   var us = d3.json("https://peteragao.github.io/space-time/usa_map.json");
-  var world = d3.json("http://enjalot.github.io/wwsd/data/world/world-110m.geojson");
+  var world = d3.json("https://enjalot.github.io/wwsd/data/world/world-110m.geojson");
   
   var regionsMap = d3.json("https://raw.githubusercontent.com/samayo/country-json/master/src/country-by-region-in-world.json");
   var proj = d3.geoAlbersUsa().scale(960).translate([360, 225]);
