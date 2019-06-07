@@ -5,6 +5,7 @@
   <script src="https://d3js.org/d3.v5.min.js" charset="utf-8"></script>
   <script src="https://d3js.org/d3-array.v2.min.js" charset="utf-8"></script>
   <script src="https://d3js.org/d3-geo.v1.min.js"></script>
+  <script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
   <script src="https://d3js.org/d3-dispatch.v1.min.js"></script>
   <script src="https://unpkg.com/topojson@3"></script>
 
@@ -12,7 +13,6 @@
   <script src="https://d3js.org/d3-time-format.v2.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.9.1/d3-tip.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  
   <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/fullpage.js@3.0.5/dist/fullpage.min.js"></script>
@@ -76,17 +76,23 @@
     <div class="section" id="secondSlide">
       <div class="content">
 		<div>
-			<h1>ICE Air Flights Over Time</h1>
-			<span style="margin-left: 40px"><h5><i>How has the number of passengers on deportation flights changed over time?</i></h5></span>
+			
 		</div>
-        <div class = "input_pane">
-           Airport name:        
-        <span>
-          <input type="text" class="form-control input_airport_name" placeholder="Airport name" aria-describedby="sizing-addon2">
-          <button class = "airport_submit">Submit</button><button id = "airport_clear">Clear</button>
-        </span><br>
-        Country of Citizenship: <span class = "nation_select_pane"></span>  <span><button id = "nation_clear">Clear</button></span>
+		  <div id = "secondSlideHeader">
+		    <div class="row">
+          <div class="input_pane column" style="height: 250px; width: 560px; float: left; margin-left: 50px">
+            <br>
+            <h1>ICE Air Flights Over Time</h1>
+            <i>In December 2018, the University of Washington Center for Human Rights obtained a dataset concerning deportation flights operated by United States Immigration and Customs Enforcement (ICE) Air Operations. This dataset contains 1.73 million records of passengers on ICE Air flights spanning from October 1, 2010 to December 5, 2018, leaving from airports throughout the United States.</i>
+            <br>
+            Airport name:        
+              <input type="text" class="form-control input_airport_name" placeholder="Airport name" aria-describedby="sizing-addon2"><button class = "airport_submit">Submit</button><button id = "airport_clear">Clear</button>
+          </div>
+          <div class="column" id = "secondSlideMap" style="height: 250px; width: 450px; margin-left: 610px">
+            
+          </div>
         </div>
+      </div>
         <div id = "secondSlideLine">
         </div>
       </div>

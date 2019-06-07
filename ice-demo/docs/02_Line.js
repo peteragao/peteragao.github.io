@@ -1,13 +1,62 @@
-function initSecondSlideLine(dispatch, data) {
+function initSecondSlideLine(dispatch, data, world, regionsMap) {
   // line plot dimensions
   var topRegion = d3.rollups(data, v => d3.sum(v, d => d.N), d => d.region)
     .sort(function(a, b) { return b[1] - a[1]; })
     .slice(0,8).map(d => d[0]);
+  
   topRegion.push("Other");
-  var colors = ['#8dd3c7','#ffffb3','#bebada','#fb8072','#80b1d3','#fdb462','#b3de69','#fccde5','#d9d9d9'];
-  var margin = {top: 60, right: 30, bottom: 60, left: 150}; 
-  var width = 960 - margin.left - margin.right;
-  var height = 550 - margin.top - margin.bottom;
+  var colors = ['#e41a1c','#377eb8','#4daf4a','#984ea3','#ff7f00','#ffff33','#a65628','#f781bf','#999999'];
+  var margin = {top: 40, right: 180, bottom: 60, left: 180}; 
+  var width = 1150 - margin.left - margin.right;
+  var height = 440 - margin.top - margin.bottom;
+
+  let nations = regionsMap.map(d => d.country);
+  let regions = regionsMap.map(d => (topRegion.indexOf(d.location) !== -1 ? d.location : "Other"));
+  var worldMap = d3.select("#secondSlideMap").append("svg")
+    .attr("width", 450)
+    .attr("height", 250)
+    .append("g");
+  var path = d3.geoPath().projection(d3.geoNaturalEarth()
+    .scale(450 / 2 / Math.PI)
+    .translate([450 / 2, 250 / 2]));
+  world.features.forEach(function (d) {
+    var i = nations.indexOf(d.properties.name);
+      if (d.properties.name === "United Republic of Tanzania") {
+        var i = nations.indexOf("Tanzania");
+      }
+    d.region = (regions[i] !== undefined ? regions[i] : "Other");
+  });
+  var mapTip = d3.tip()
+    .attr('class', "d3-tip")
+    .attr("opacity", 0.9)
+    .style("color", "white")
+    .style("background-color", "gray")
+    .style("padding", "4px 6px")
+    .style("border-radius", "2px")
+    .style("font-size", "11px")
+    .style("font-family", "Avenir Next")
+    .offset([-6, 0])
+    .html(function(d) {return `<i>${d.properties.name} (${d.region})</i>` });
+  worldMap.selectAll("path")
+    .data(world.features)
+    .enter().append("path")
+    .attr("fill", function(d) {
+      return colors[topRegion.indexOf(d.region)];
+    })
+    .attr("d", path)
+    .on('mouseover', function(d) {
+      mapTip.show(d, this);
+      d3.select(this).style('opacity', 0.65);
+    })
+    .on('mouseout', function(d) {
+      mapTip.hide();
+      d3.select(this).style('opacity', 1);
+    })
+    .on('click', function(d) {
+      drawRegionalBar(data, d.region, rightBar, y_select, colors[topRegion.indexOf(d.region)]);
+    });
+  worldMap.call(mapTip);
+    
   var linePlotContainer = d3.select("#secondSlideLine").append("svg")
     .attr("width", width + margin.left + margin.right)
     .attr("height", height + margin.top + margin.bottom);
@@ -16,13 +65,47 @@ function initSecondSlideLine(dispatch, data) {
     .attr("width", width / 2)
     .attr("height", height);
   var rightBar = linePlotContainer.append("g")
-    .attr("transform", "translate(" + (margin.left + width / 2 + 30) + "," + margin.top + ")")
+    .attr("transform", "translate(" + (margin.left + width / 2 + 50) + "," + margin.top + ")")
     .attr("width", width / 2)
     .attr("height", height);
+  linePlotContainer.append("text")
+    .attr("x", 185 + margin.left)
+    .attr("y", height + margin.top + margin.bottom / 2 )
+    .attr("text-anchor", "middle")
+    .attr("dy", "1em")
+    .text("Year");
+    linePlotContainer.append("text")
+    .attr("x", 185 + width / 2 + margin.left + 50)
+    .attr("y", height + margin.top + margin.bottom / 2 + 10)
+    .attr("text-anchor", "middle")
+    .attr("dy", "1em")
+    .text("Year");
+  leftBar.append("text")
+    .attr("x", 185)
+    .attr("y", -20)
+    .attr("class", "title")
+    .attr("text-anchor", "middle")
+    .attr('font-size', '18')
+    .text("All regions");
+  rightBar.append("text")
+    .attr("x", 185)
+    .attr("y", -20)
+    .attr("class", "title")
+    .attr("text-anchor", "middle")
+    .attr('font-size', '18')
+    .text("Selected region");
+  rightBar.append("text")
+    .attr("x", 185)
+    .attr("y", 15)
+    .attr("class", "subtitle")
+    .attr("text-anchor", "middle")
+    .attr('font-size', '14')
+    .attr("fill", "#555")
+    .text("Click map or bars on left plot to select region");
     
   leftBar.append("text")
     .attr("transform", "rotate(-90)")
-    .attr("y", 0 - 2 * margin.left / 3)
+    .attr("y", 0 - 100)
     .attr("x", 0 - (height / 2))
     .attr("dy", "1em")
     .attr("text-anchor", "middle")
@@ -143,6 +226,8 @@ function drawAllRegionsBar(data, g, y, topRegion, colors) {
 }
 
 function drawRegionalBar(data, rgn, g, y, color) {
+  g.selectAll(".subtitle").remove();
+  g.selectAll(".title").text(rgn);
   g.selectAll(".layer").remove();
   var filtered = data
     .filter(function(d) { return (d.topRegion === rgn) });
@@ -151,7 +236,15 @@ function drawRegionalBar(data, rgn, g, y, color) {
   var byTopNation = byNation.slice(0,8);
   byTopNation.push(["Other", d3.sum(byNation.slice(8, byNation.length).map(d => d[1]))]);
   var topNation = byTopNation.map(d => d[0]);
-  var grouped = d3.rollup(filtered, v => d3.sum(v, d => d.N), d => d.CountryOfCitizenship, d => d.MissionYear);
+  filtered.forEach(function(d) {
+    if (topNation.indexOf(d.CountryOfCitizenship) !== -1) {
+      d.topNation = d.CountryOfCitizenship;
+    } else {
+      d.topNation = "Other";
+    }
+  });
+  var grouped = d3.rollup(filtered, v => d3.sum(v, d => d.N), d => d.topNation, d => d.MissionYear);
+  
   groupedReformat = [];
 
   topNation.forEach(function (i) {
@@ -170,21 +263,17 @@ function drawRegionalBar(data, rgn, g, y, color) {
   var sumstat = d3.nest()
     .key(function(d) { return d.yr;})
     .entries(groupedReformat);
-  console.log(sumstat);
   var groupedStack = d3.stack()
     .keys(topNation.map(function (d, i) { return i;}))
     .value(function(d, key){
       return d.values[key].v;
     })
     (sumstat);
-  console.log(groupedStack);
   groupedStack.forEach(function (d) {
     d.forEach(function (e) {
-      console.log(topNation[d.index]);
       e.coc = topNation[d.index];
     });
   });
-  console.log(groupedStack);
   var tip = d3.tip()
     .attr('class', "d3-tip")
     .attr("opacity", 0.9)
@@ -201,7 +290,7 @@ function drawRegionalBar(data, rgn, g, y, color) {
     .enter().append("g")
     .attr("class", "layer")
     .style("fill", color)
-    .attr('opacity', function(d, i) {return (7 - i) / 10});
+    .attr('opacity', function(d, i) {return (topNation.length + 1 - i) / (topNation.length + 1)});
   layers.selectAll("rect")
     .data(function(d) { return d; })
     .enter().append("rect")

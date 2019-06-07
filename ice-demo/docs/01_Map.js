@@ -1,7 +1,7 @@
 function initFirstSlideMap(us, ports, edges, dispatch) {
   var proj = d3.geoAlbersUsa().scale(960).translate([360, 225]);
   var path = d3.geoPath().projection(proj);
-  var figDims = ({x: 1150, y: 650});
+  var figDims = ({x: 1150, y: 600});
   var mapDims = ({x: 720, y: 450});
   var barDims = ({x: 430, y: 550});
   var barMargin = {top: 80, right: 20, bottom: 100, left: 150}; 
@@ -9,7 +9,7 @@ function initFirstSlideMap(us, ports, edges, dispatch) {
     .append("svg")
     .attr("width", figDims.x)
     .attr("height", figDims.y);
-  var margin = {top: 60, right: 0, bottom: 140, left: 430}; 
+  var margin = {top: 60, right: 0, bottom: 90, left: 430}; 
   var map = mapContainer.append("g")
     .attr("fill", "#ddd")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
