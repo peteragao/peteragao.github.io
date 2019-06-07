@@ -42,10 +42,7 @@ function main() {
     // add null option
     nationList.unshift(" ");
     // Load dispatch methods
-    //initSecondSlideSummary(dispatch, await flightsCleaned);
-    initThirdSlideLine(dispatch, await flightsCleaned);
-    //initFourthSlideFlights(dispatch, await cleaned, await us, path, proj);
-    //initFifthSlideBar(dispatch);
+    initSecondSlideLine(dispatch, await flightsCleaned);
     
     // Load plots
     dispatch.call("load", this, await flightsCleaned);

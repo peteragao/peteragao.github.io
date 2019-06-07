@@ -73,7 +73,7 @@
         </center>
     </div>
     
-    <div class="section" id="thirdSlide">
+    <div class="section" id="secondSlide">
       <div class="content">
 		<div>
 			<h1>ICE Air Flights Over Time</h1>
@@ -87,24 +87,23 @@
         </span><br>
         Country of Citizenship: <span class = "nation_select_pane"></span>  <span><button id = "nation_clear">Clear</button></span>
         </div>
-        <div id = "thirdSlideLine">
+        <div id = "secondSlideLine">
         </div>
       </div>
   </div>
 </div>
   <script src="01_Map.js"></script>
-  <script src="03_Line.js"></script>
+  <script src="02_Line.js"></script>
   <script src="main.js"></script>	
 	<script>
     $(document).ready(function() {
         $('#fullpage').fullpage({
           menu: '#menu', 
           lockAnchors: false,
-          anchors:['first', 'second', 'third', 'fourth', 'fifth'],
+          anchors:['first', 'second'],
 	       	navigation: true,
 		      navigationPosition: 'right',
 		      showActiveTooltip: true,
-		      navigationTooltips: ['Introduction', 'hello', 'hello'],
         });
     });
 	</script>
