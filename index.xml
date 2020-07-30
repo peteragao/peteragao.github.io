@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Peter Gao</title>
@@ -6,28 +6,18 @@
     <description>Recent content in Home on Peter Gao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Nov 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Playing with d3 and blogdown</title>
-      <link>/post/2018/11/08/playing-with-d3-and-blogdown/</link>
-      <pubDate>Thu, 08 Nov 2018 00:00:00 +0000</pubDate>
+      <title>Graduate Climate Conference 2020</title>
+      <link>/post/2020/07/29/graduate-climate-conference-2020/</link>
+      <pubDate>Wed, 29 Jul 2020 00:00:00 +0000</pubDate>
       
-      <guid>/post/2018/11/08/playing-with-d3-and-blogdown/</guid>
-      <description>.bar { fill: steelblue; } .bar:hover { fill: orange; }  library(&amp;quot;jsonlite&amp;quot;) cat( paste( &amp;#39;&amp;lt;script&amp;gt; var data = &amp;#39;,toJSON(cars),&amp;#39;; &amp;lt;/script&amp;gt;&amp;#39; , sep=&amp;quot;&amp;quot;) )  var data = [{&#34;speed&#34;:4,&#34;dist&#34;:2},{&#34;speed&#34;:4,&#34;dist&#34;:10},{&#34;speed&#34;:7,&#34;dist&#34;:4},{&#34;speed&#34;:7,&#34;dist&#34;:22},{&#34;speed&#34;:8,&#34;dist&#34;:16},{&#34;speed&#34;:9,&#34;dist&#34;:10},{&#34;speed&#34;:10,&#34;dist&#34;:18},{&#34;speed&#34;:10,&#34;dist&#34;:26},{&#34;speed&#34;:10,&#34;dist&#34;:34},{&#34;speed&#34;:11,&#34;dist&#34;:17},{&#34;speed&#34;:11,&#34;dist&#34;:28},{&#34;speed&#34;:12,&#34;dist&#34;:14},{&#34;speed&#34;:12,&#34;dist&#34;:20},{&#34;speed&#34;:12,&#34;dist&#34;:24},{&#34;speed&#34;:12,&#34;dist&#34;:28},{&#34;speed&#34;:13,&#34;dist&#34;:26},{&#34;speed&#34;:13,&#34;dist&#34;:34},{&#34;speed&#34;:13,&#34;dist&#34;:34},{&#34;speed&#34;:13,&#34;dist&#34;:46},{&#34;speed&#34;:14,&#34;dist&#34;:26},{&#34;speed&#34;:14,&#34;dist&#34;:36},{&#34;speed&#34;:14,&#34;dist&#34;:60},{&#34;speed&#34;:14,&#34;dist&#34;:80},{&#34;speed&#34;:15,&#34;dist&#34;:20},{&#34;speed&#34;:15,&#34;dist&#34;:26},{&#34;speed&#34;:15,&#34;dist&#34;:54},{&#34;speed&#34;:16,&#34;dist&#34;:32},{&#34;speed&#34;:16,&#34;dist&#34;:40},{&#34;speed&#34;:17,&#34;dist&#34;:32},{&#34;speed&#34;:17,&#34;dist&#34;:40},{&#34;speed&#34;:17,&#34;dist&#34;:50},{&#34;speed&#34;:18,&#34;dist&#34;:42},{&#34;speed&#34;:18,&#34;dist&#34;:56},{&#34;speed&#34;:18,&#34;dist&#34;:76},{&#34;speed&#34;:18,&#34;dist&#34;:84},{&#34;speed&#34;:19,&#34;dist&#34;:36},{&#34;speed&#34;:19,&#34;dist&#34;:46},{&#34;speed&#34;:19,&#34;dist&#34;:68},{&#34;speed&#34;:20,&#34;dist&#34;:32},{&#34;speed&#34;:20,&#34;dist&#34;:48},{&#34;speed&#34;:20,&#34;dist&#34;:52},{&#34;speed&#34;:20,&#34;dist&#34;:56},{&#34;speed&#34;:20,&#34;dist&#34;:64},{&#34;speed&#34;:22,&#34;dist&#34;:66},{&#34;speed&#34;:23,&#34;dist&#34;:54},{&#34;speed&#34;:24,&#34;dist&#34;:70},{&#34;speed&#34;:24,&#34;dist&#34;:92},{&#34;speed&#34;:24,&#34;dist&#34;:93},{&#34;speed&#34;:24,&#34;dist&#34;:120},{&#34;speed&#34;:25,&#34;dist&#34;:85}];  experimenting with d3 (from http://bl.ocks.org/alexsb/8565055)
-var data = [150, 230, 180, 90]; var svg = d3.select(&amp;quot;body&amp;quot;) .append(&amp;quot;svg&amp;quot;) .attr(&amp;quot;width&amp;quot;, 300) .attr(&amp;quot;height&amp;quot;, 200); svg.selectAll(&amp;quot;.bar&amp;quot;) .data(data) .enter() .append(&amp;quot;rect&amp;quot;) .attr({ class : &amp;quot;bar&amp;quot;, width : function(d) {return d;}, height: &amp;quot;40&amp;quot;, y : function(d, i) {return i*50 + 10;}, x : &amp;quot;10&amp;quot; }); var data = [150, 230, 180, 90]; var svg = d3.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/links/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/links/</guid>
-      <description>Other Links /*! jQuery v1.11.3 | (c) 2005, 2015 jQuery Foundation, Inc. | jquery.org/license */ !function(a,b){&#34;object&#34;==typeof module&amp;&amp;&#34;object&#34;==typeof module.exports?module.exports=a.document?b(a,!0):function(a){if(!a.document)throw new Error(&#34;jQuery requires a window with a document&#34;);return b(a)}:b(a)}(&#34;undefined&#34;!=typeof window?window:this,function(a,b){var c=[],d=c.slice,e=c.concat,f=c.push,g=c.indexOf,h={},i=h.toString,j=h.hasOwnProperty,k={},l=&#34;1.11.3&#34;,m=function(a,b){return new m.fn.init(a,b)},n=/^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g,o=/^-ms-/,p=/-([\da-z])/gi,q=function(a,b){return b.toUpperCase()};m.fn=m.prototype={jquery:l,constructor:m,selector:&#34;&#34;,length:0,toArray:function(){return d.call(this)},get:function(a){return null!=a?0a?this[a+this.length]:this[a]:d.call(this)},pushStack:function(a){var b=m.merge(this.constructor(),a);return b.prevObject=this,b.context=this.context,b},each:function(a,b){return m.each(this,a,b)},map:function(a){return this.pushStack(m.map(this,function(b,c){return a.call(b,c,b)}))},slice:function(){return this.pushStack(d.apply(this,arguments))},first:function(){return this.eq(0)},last:function(){return this.eq(-1)},eq:function(a){var b=this.length,c=+a+(0a?b:0);return this.pushStack(c=0&amp;&amp;bc?[this[c]]:[])},end:function(){return this.prevObject||this.constructor(null)},push:f,sort:c.sort,splice:c.splice},m.extend=m.fn.extend=function(){var a,b,c,d,e,f,g=arguments[0]||{},h=1,i=arguments.length,j=!1;for(&#34;boolean&#34;==typeof g&amp;&amp;(j=g,g=arguments[h]||{},h++),&#34;object&#34;==typeof g||m.isFunction(g)||(g={}),h===i&amp;&amp;(g=this,h--);ih;h++)if(null!=(e=arguments[h]))for(d in e)a=g[d],c=e[d],g!==c&amp;&amp;(j&amp;&amp;c&amp;&amp;(m.isPlainObject(c)||(b=m.isArray(c)))?(b?(b=!1,f=a&amp;&amp;m.isArray(a)?a:[]):f=a&amp;&amp;m.isPlainObject(a)?a:{},g[d]=m.extend(j,f,c)):void 0!==c&amp;&amp;(g[d]=c));return g},m.extend({expando:&#34;jQuery&#34;+(l+Math.random()).replace(/\D/g,&#34;&#34;),isReady:!0,error:function(a){throw new Error(a)},noop:function(){},isFunction:function(a){return&#34;function&#34;===m.type(a)},isArray:Array.isArray||function(a){return&#34;array&#34;===m.type(a)},isWindow:function(a){return null!=a&amp;&amp;a==a.window},isNumeric:function(a){return!m.isArray(a)&amp;&amp;a-parseFloat(a)+1=0},isEmptyObject:function(a){var b;for(b in a)return!1;return!0},isPlainObject:function(a){var b;if(!a||&#34;object&#34;!==m.type(a)||a.nodeType||m.isWindow(a))return!1;try{if(a.constructor&amp;&amp;!j.call(a,&#34;constructor&#34;)&amp;&amp;!j.call(a.constructor.prototype,&#34;isPrototypeOf&#34;))return!1}catch(c){return!1}if(k.ownLast)for(b in a)return j.call(a,b);for(b in a);return void 0===b||j.call(a,b)},type:function(a){return null==a?a+&#34;&#34;:&#34;object&#34;==typeof a||&#34;function&#34;==typeof a?h[i.call(a)]||&#34;object&#34;:typeof a},globalEval:function(b){b&amp;&amp;m.</description>
+      <guid>/post/2020/07/29/graduate-climate-conference-2020/</guid>
+      <description>Excited to share that I’ve been helping with planning for this fall’s (online) Graduate Climate Conference and applications are now open! Please share and feel free to send me any suggestions about making online conferences accessible/meaningful!</description>
     </item>
     
     <item>
@@ -50,6 +40,15 @@ I graduated from the University of Chicago in 2017 with an MS in Statistics and 
     </item>
     
     <item>
+      <title>Posts</title>
+      <link>/post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/</guid>
+      <description>hello</description>
+    </item>
+    
+    <item>
       <title>Research</title>
       <link>/research/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -64,8 +63,8 @@ I graduated from the University of Chicago in 2017 with an MS in Statistics and 
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/a18/</guid>
-      <description>The Space-Time Reading Group meets weekly to discuss current research in spatiotemporal statistics and related fields.  In Autumn 2018, we are reading and discussing Advanced Spatial Modeling with Stochastic Partial Differential Equations Using R and INLA by Elias T. Krainski, Virgilio Gómez-Rubio, Haakon Bakka, Amanda Lenzi, Daniela Castro-Camilo, Daniel Simpson, Finn Lindgren and Håvard Rue (website and Gitbook).
-Meetings are on Tuesdays from 12:30 - 1:30pm in the CSSS conference room (Padelford C14A).</description>
+      <description>This year, Space-Time Reading Group is jointly organized by John Bestand Peter Gao. To receive updates about meetings and other upcoming events, please sign up for the listhost.
+&amp;lt;p&amp;gt;&amp;lt;tr ALIGN=&amp;quot;Left&amp;quot;&amp;gt; &amp;lt;td&amp;gt; 11/27 &amp;lt;/td&amp;gt; &amp;lt;td&amp;gt; Serge Aleshin-Guendel &amp;lt;/td&amp;gt; &amp;lt;td&amp;gt; &amp;lt;a href=&amp;quot;https://becarioprecario.bitbucket.io/spde-gitbook/ch-lcox.html&amp;quot; target=&amp;quot;_blank&amp;quot;&amp;gt;Ch. 4&amp;lt;/a&amp;gt;: Point processes and preferential sampling &amp;lt;/td&amp;gt;  </description>
     </item>
     
     <item>
