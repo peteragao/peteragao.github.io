@@ -6,10 +6,21 @@
     <description>Recent content in Home on Peter Gao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jul 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Gauss-Hermite Quadrature and Laplace Approximations</title>
+      <link>/post/2020/09/18/gauss-hermite-quadrature-and-laplace-approximations/</link>
+      <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>/post/2020/09/18/gauss-hermite-quadrature-and-laplace-approximations/</guid>
+      <description>There always seems to be a better vantage point–even well-established photo spots seem to be missing something (perhaps just because they are so widely accepted!). Still, that’s the challenge at hand–to pick your spot.
+Anyways, today I feel like the best viewpoint for understanding the uses of Gauss-Hermite quadrature in statistics comes from a 1994 paper, “A Note on Gauss-Hermite Quadrature,” by Qing Liu and Donald A. Pierce.
+Assume we wish to approximate the following integral:</description>
+    </item>
     
     <item>
       <title>Graduate Climate Conference 2020</title>
@@ -26,8 +37,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>I am currently pursuing a PhD in Statistics at the University of Washington. My research interests center upon the uses of spatial and spatiotemporal statistics in environmental science and the social sciences. I am currently researching statistical postprocessing methods for improving forecasts for sea ice thickness with Adrian Raftery and Cecilia Bitz.
-I graduated from the University of Chicago in 2017 with an MS in Statistics and a BS in Mathematics and Statistics.</description>
+      <description>I am currently pursuing a PhD in Statistics at the University of Washington. My research interests center upon the uses of spatial and spatiotemporal statistics in environmental science and the social sciences. I am currently researching methods for estimating child mortality rates at the subnational level with Jon Wakefield. I have previously studied statistical postprocessing methods for improving forecasts for sea ice thickness with Adrian Raftery and Cecilia Bitz.</description>
     </item>
     
     <item>
@@ -74,7 +84,7 @@ Meetings are on Tuesdays from 12:30 - 1:30pm in the CSSS conference room (Padelf
       
       <guid>/teaching/</guid>
       <description>at the University of Washington:
- Teaching Assistant, STAT 394 Probability I (Winter 2020) Teaching Assistant, STAT 220 Principles of Statistical Reasoning (Spring 2018) Teaching Assistant, STAT 221 Statistical Concepts and Methods for the Social Sciences (Winter 2018) Teaching Assistant, STAT 221 Statistical Concepts and Methods for the Social Sciences (Fall 2017)  In Summer 2019, I taught Applied Math and Logical Reasoning to middle school students as Junior Faculty at BEAM Discovery,</description>
+ Instructor, QSCI 381 Introduction to Probability and Statistics (Summer 2020) Teaching Assistant, STAT 394 Probability I (Winter 2020) Teaching Assistant, STAT 220 Principles of Statistical Reasoning (Spring 2018) Teaching Assistant, STAT 221 Statistical Concepts and Methods for the Social Sciences (Winter 2018) Teaching Assistant, STAT 221 Statistical Concepts and Methods for the Social Sciences (Fall 2017)  In Summer 2019, I taught Applied Math and Logical Reasoning to middle school students as Junior Faculty at BEAM Discovery,</description>
     </item>
     
   </channel>

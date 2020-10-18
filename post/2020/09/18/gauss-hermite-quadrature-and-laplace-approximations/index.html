@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Categories | Peter Gao</title>
+    <title>Gauss-Hermite Quadrature and Laplace Approximations | Peter Gao</title>
     <link rel="stylesheet" href="/css/style.css" />
     <link rel="stylesheet" href="/css/fonts.css" />
     <link href='//fonts.googleapis.com/css?family=Gill%20Sans' rel='stylesheet' type='text/css'>
@@ -83,19 +83,28 @@ table {
     <hr/>
     </nav>
 
+<div class="article-meta">
+<h2><span class="title">Gauss-Hermite Quadrature and Laplace Approximations</span></h2>
 
-<h1>Categories</h1>
+<h4 class="date">2020/09/18</h4>
+</div>
 
-<ul class="terms">
-  
-  <li>
-    <a href="/categories/post">
-      post
-    </a>
-    (2)
-  </li>
-  
-</ul>
+<main>
+
+
+
+<p>There always seems to be a better vantage point–even well-established photo spots seem to be missing something (perhaps just because they are so widely accepted!). Still, that’s the challenge at hand–to pick your spot.</p>
+<p>Anyways, today I feel like the best viewpoint for understanding the uses of Gauss-Hermite quadrature in statistics comes from a 1994 paper, <a href="https://www.jstor.org/stable/2337136">“A Note on Gauss-Hermite Quadrature,”</a> by Qing Liu and Donald A. Pierce.</p>
+<p>Assume we wish to approximate the following integral:</p>
+<p><span class="math display">\[\int_{-\infty}^\infty g(t)dt\]</span>
+In its most basic form, Gauss-Hermite quadrature is a way to approximate integrals of the form</p>
+<p><span class="math display">\[\int_{-\infty}^\infty f(x)\exp(-x^2)dx\]</span></p>
+<p>essentially by using a weighted sum</p>
+<p><span class="math display">\[\int_{-\infty}^\infty f(x)\exp(-x^2)dx\approx \sum_{i=1}^m w_if(x_i)\]</span></p>
+<p>where <span class="math inline">\(x_i\)</span> are commonly referred to as <strong>nodes</strong> (chosen here to be zeroes of the <em>m</em>th order Hermite polynomial) and <span class="math inline">\(w_i\)</span> represent corresponding weights.</p>
+<p>The accuracy of this approximation depends on the relationship of the integrand to the selected nodes;</p>
+
+</main>
 
   <footer>
   <script src="//yihui.name/js/math-code.js"></script>
