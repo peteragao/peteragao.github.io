@@ -6,21 +6,10 @@
     <description>Recent content in Posts on Peter Gao</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 18 Sep 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 29 Jul 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Gauss-Hermite Quadrature and Laplace Approximations</title>
-      <link>/post/2020/09/18/gauss-hermite-quadrature-and-laplace-approximations/</link>
-      <pubDate>Fri, 18 Sep 2020 00:00:00 +0000</pubDate>
-      
-      <guid>/post/2020/09/18/gauss-hermite-quadrature-and-laplace-approximations/</guid>
-      <description>There always seems to be a better vantage point–even well-established photo spots seem to be missing something (perhaps just because they are so widely accepted!). Still, that’s the challenge at hand–to pick your spot.
-Anyways, today I feel like the best viewpoint for understanding the uses of Gauss-Hermite quadrature in statistics comes from a 1994 paper, “A Note on Gauss-Hermite Quadrature,” by Qing Liu and Donald A. Pierce.
-Assume we wish to approximate the following integral:</description>
-    </item>
     
     <item>
       <title>Graduate Climate Conference 2020</title>
