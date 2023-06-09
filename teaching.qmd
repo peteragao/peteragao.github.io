@@ -1,0 +1,20 @@
+---
+title: "TEACHING"
+---
+
+**_at the University of Washington:_**
+
+* **Instructor,** STAT 302 *Statistical Software and its Applications* ([Autumn 2021](https://peteragao.github.io/STAT302-AUT2021/))
+* **Instructor,** STAT 303 *Introduction to the Ethics of Algorithmic Decision Making* (Summer 2021, [Winter 2022](https://peteragao.github.io/STAT498-WIN2022/))
+* **Instructor,** STAT 180 *Introduction to Data Science* (Winter 2021)
+* **Instructor,** QSCI 381 *Introduction to Probability and Statistics* (Summer 2020)
+
+* **Teaching Assistant,** STAT 529 *Sample Survey Techniques* (Spring 2021, Spring 2023)
+* **Teaching Assistant,** STAT 394 *Probability II* (Spring 2021)
+* **Teaching Assistant,** STAT 394 *Probability I* (Winter 2020)
+* **Teaching Assistant,** STAT 220 *Principles of Statistical Reasoning* (Spring 2018)
+* **Teaching Assistant,** STAT 221 *Statistical Concepts and Methods for the Social Sciences* (Autumn 2017, Winter 2018)
+
+In September 2021, I served as instructor for [CSSS Math Camp](https://csss.uw.edu/academics/math-camp). The course website can be found [here](https://peteragao.github.io/CSSS-Math-Camp-2021/).
+
+In Summer 2019, I taught Applied Math and Logical Reasoning to middle school students as Junior Faculty at [BEAM Discovery](https://www.beammath.org/for6thgraders). I developed a course on basic statistical concepts named [Big Questions and Big Answers](https://www.beammath.org/big-questions-and-big-answers).

@@ -1,0 +1,21 @@
+---
+title: "RESEARCH"
+---
+
+<br>
+
+My research focuses on applications of survey statistics and spatial statistics to questions in the social sciences and demography. In particular, I am interested in design-based and model-based analysis of survey data and the communication and interpretation of critical official statistics including mortality rates. 
+
+<br>
+
+## Small area estimation of health and demographic indicators
+
+I am currently researching methods for mapping health and demographic indicators at the subnational level with [Jon Wakefield](https://faculty.washington.edu/jonno/index.html). In our work, we aim to develop simple, interpretable estimators that leverage recent advances in spatial modeling and acknowledge survey design through the use of sampling weights. 
+
+
+<br>
+
+## Probabilistic forecasts of sea ice thickness
+
+I have previously studied statistical postprocessing methods for improving forecasts for sea ice thickness with [Adrian Raftery](http://www.stat.washington.edu/raftery/) and [Cecilia Bitz](http://www.atmos.washington.edu/~bitz/). Predicting changes in Arctic sea ice thickness is vital in a changing Arctic for making decisions about shipping and resource management in the region. We developed  a statistical spatio-temporal two-stage model for sea ice thickness and showed how it could be used to generate probabilistic forecasts up to three months into the future ([*Journal of Agricultural, Biological and Environmental Statistics*, 2022](
+https://doi.org/10.1007/s13253-021-00480-0))

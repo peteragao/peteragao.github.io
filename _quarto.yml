@@ -1,0 +1,26 @@
+project:
+  type: website
+  output-dir: _site
+
+website:
+  title: "PETER A. GAO"
+  navbar:
+    background: light
+    foreground: dark
+    right:
+      - href: about.qmd
+        text: ABOUT
+      - href: teaching.qmd
+        text: TEACHING
+      - href: research.qmd
+        text: RESEARCH
+      - href: blog.qmd
+        text: BLOG
+
+format:
+  html:
+    theme: styles.scss
+    css: styles.css
+
+
+
