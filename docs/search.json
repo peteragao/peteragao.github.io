@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "teaching.html",
+    "href": "teaching.html",
+    "title": "TEACHING",
+    "section": "",
+    "text": "at the University of Washington:\n\nInstructor, STAT 302 Statistical Software and its Applications (Autumn 2021)\nInstructor, STAT 303 Introduction to the Ethics of Algorithmic Decision Making (Summer 2021, Winter 2022)\nInstructor, STAT 180 Introduction to Data Science (Winter 2021)\nInstructor, QSCI 381 Introduction to Probability and Statistics (Summer 2020)\nTeaching Assistant, STAT 529 Sample Survey Techniques (Spring 2021, Spring 2023)\nTeaching Assistant, STAT 394 Probability II (Spring 2021)\nTeaching Assistant, STAT 394 Probability I (Winter 2020)\nTeaching Assistant, STAT 220 Principles of Statistical Reasoning (Spring 2018)\nTeaching Assistant, STAT 221 Statistical Concepts and Methods for the Social Sciences (Autumn 2017, Winter 2018)\n\nIn September 2021, I served as instructor for CSSS Math Camp. The course website can be found here.\nIn Summer 2019, I taught Applied Math and Logical Reasoning to middle school students as Junior Faculty at BEAM Discovery. I developed a course on basic statistical concepts named Big Questions and Big Answers."
+  },
+  {
+    "objectID": "research.html",
+    "href": "research.html",
+    "title": "RESEARCH",
+    "section": "",
+    "text": "My research focuses on applications of survey statistics and spatial statistics to questions in the social sciences and demography. In particular, I am interested in design-based and model-based analysis of survey data and the communication and interpretation of critical official statistics including mortality rates."
+  },
+  {
+    "objectID": "research.html#small-area-estimation-of-health-and-demographic-indicators",
+    "href": "research.html#small-area-estimation-of-health-and-demographic-indicators",
+    "title": "RESEARCH",
+    "section": "Small area estimation of health and demographic indicators",
+    "text": "Small area estimation of health and demographic indicators\nI am currently researching methods for mapping health and demographic indicators at the subnational level with Jon Wakefield. In our work, we aim to develop simple, interpretable estimators that leverage recent advances in spatial modeling and acknowledge survey design through the use of sampling weights."
+  },
+  {
+    "objectID": "research.html#probabilistic-forecasts-of-sea-ice-thickness",
+    "href": "research.html#probabilistic-forecasts-of-sea-ice-thickness",
+    "title": "RESEARCH",
+    "section": "Probabilistic forecasts of sea ice thickness",
+    "text": "Probabilistic forecasts of sea ice thickness\nI have previously studied statistical postprocessing methods for improving forecasts for sea ice thickness with Adrian Raftery and Cecilia Bitz. Predicting changes in Arctic sea ice thickness is vital in a changing Arctic for making decisions about shipping and resource management in the region. We developed a statistical spatio-temporal two-stage model for sea ice thickness and showed how it could be used to generate probabilistic forecasts up to three months into the future (Journal of Agricultural, Biological and Environmental Statistics, 2022)"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "ABOUT",
+    "section": "",
+    "text": "I am currently pursuing a PhD in Statistics at the University of Washington. My research interests center upon the uses of spatial statistics and survey statistics in environmental science and the social sciences. I am currently researching methods for estimating child mortality rates at the subnational level with Jon Wakefield. I have previously studied statistical postprocessing methods for improving forecasts for sea ice thickness with Adrian Raftery and Cecilia Bitz.\nI graduated from the University of Chicago in 2017 with an MS in Statistics and a BS in Mathematics and Statistics. My CV is available upon request."
+  },
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "BLOG",
+    "section": "",
+    "text": "No matching items"
+  }
+]
