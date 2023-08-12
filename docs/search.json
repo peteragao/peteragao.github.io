@@ -1,5 +1,12 @@
 [
   {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "BLOG",
+    "section": "",
+    "text": "No matching items"
+  },
+  {
     "objectID": "teaching.html",
     "href": "teaching.html",
     "title": "TEACHING",
@@ -32,13 +39,6 @@
     "href": "about.html",
     "title": "ABOUT",
     "section": "",
-    "text": "I am currently pursuing a PhD in Statistics at the University of Washington. My research interests center upon the uses of spatial statistics and survey statistics in environmental science and the social sciences. I am currently researching methods for estimating child mortality rates at the subnational level with Jon Wakefield. I have previously studied statistical postprocessing methods for improving forecasts for sea ice thickness with Adrian Raftery and Cecilia Bitz.\nI graduated from the University of Chicago in 2017 with an MS in Statistics and a BS in Mathematics and Statistics. My CV is available upon request."
-  },
-  {
-    "objectID": "blog.html",
-    "href": "blog.html",
-    "title": "BLOG",
-    "section": "",
-    "text": "No matching items"
+    "text": "I am currently an Assistant Professor of Statistics and Data Science in the Department of Mathematics and Statistics at San José State University. My research interests center upon the uses of spatial statistics and survey statistics in environmental science and the social sciences.\nI received my PhD in Statistics at the University of Washington. For my dissertation research, I developed methods for estimating child mortality rates at the subnational level with Jon Wakefield. I have previously studied statistical postprocessing methods for improving forecasts for sea ice thickness with Adrian Raftery and Cecilia Bitz. Prior to my time at UW, I graduated from the University of Chicago with an MS in Statistics and a BS in Mathematics and Statistics. My CV is available upon request."
   }
 ]
