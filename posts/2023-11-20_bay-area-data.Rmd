@@ -1,0 +1,12 @@
+---
+title: "Bay Area Datasets for Teaching Statistics"
+output: html_document
+date: "2023-11-20"
+draft: true
+---
+
+| Name                                                                                  | Source                        | Article/Readings                                                                                                           | Topics                                                  |
+|-------------------|----------------|-------------------|-------------------|
+| [CalEnviroScreen 4.0](https://oehha.ca.gov/calenviroscreen/report/calenviroscreen-40) | [OEHHA](https://oehha.ca.gov) | [CalEnviroScreen 4.0 Report](https://oehha.ca.gov/media/downloads/calenviroscreen/report/calenviroscreen40reportf2021.pdf) | spatial data, environmental science, data visualization |
+|                                                                                       |                               |                                                                                                                            |                                                         |
+|                                                                                       |                               |                                                                                                                            |                                                         |

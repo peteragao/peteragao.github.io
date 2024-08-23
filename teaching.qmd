@@ -2,6 +2,41 @@
 title: "TEACHING"
 ---
 
+**_at San José State University:_**
+
+*Fall 2024*
+
+- **MATH 161A** Applied Probability and Statistics I
+- **MATH 167R** Statistical Programming with R
+
+*Spring 2024*
+
+- **MATH 250** Mathematical Data Visualization
+- **MATH 167R** Statistical Programming with R
+
+*Fall 2023*
+
+- **MATH 30/30X** Calculus I
+- **MATH 167R** Statistical Programming with R
+
+Prior to arriving at SJSU, I taught a variety of courses at the University of Washington including:
+
+- **STAT 302** Statistical Software and its Applications
+- **STAT 303** Introduction to the Ethics of Algorithmic Decision Making
+- **STAT 180** Introduction to Data Science
+- **QSCI 381** Introduction to Probability and Statistics. 
+
+In Summer 2019, I taught Applied Math and Logical Reasoning to middle school students as Junior Faculty at [BEAM Discovery](https://www.beammath.org/for6thgraders). I developed a course on basic statistical concepts named [Big Questions and Big Answers](https://www.beammath.org/big-questions-and-big-answers).
+
+
+
+
+
+
+```{r, echo = F}
+knitr::knit_exit()
+```
+
 **_at the University of Washington:_**
 
 * **Instructor,** STAT 302 *Statistical Software and its Applications* ([Autumn 2021](https://peteragao.github.io/STAT302-AUT2021/))
@@ -16,5 +51,3 @@ title: "TEACHING"
 * **Teaching Assistant,** STAT 221 *Statistical Concepts and Methods for the Social Sciences* (Autumn 2017, Winter 2018)
 
 In September 2021, I served as instructor for [CSSS Math Camp](https://csss.uw.edu/academics/math-camp). The course website can be found [here](https://peteragao.github.io/CSSS-Math-Camp-2021/).
-
-In Summer 2019, I taught Applied Math and Logical Reasoning to middle school students as Junior Faculty at [BEAM Discovery](https://www.beammath.org/for6thgraders). I developed a course on basic statistical concepts named [Big Questions and Big Answers](https://www.beammath.org/big-questions-and-big-answers).
